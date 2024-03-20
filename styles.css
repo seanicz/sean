@@ -1,0 +1,195 @@
+/* General Styles */
+body {
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white; /* Change font color to white */
+    font-size: 15px;
+}
+
+header {
+    background-color: transparent; /* Set background color to transparent */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white; /* Change link color to white */
+    text-decoration: none;
+    transition: text-decoration 0.3s; /* Add transition effect for smooth hover */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+section {
+    padding: 20px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill {
+    text-align: center;
+    margin: 20px;
+}
+
+.skill img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.skill p {
+    margin-top: 10px;
+}
+
+.resume-container {
+    background-color: transparent; /* Set background color to transparent */
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7); /* Add shadow effect */
+}
+
+.resume-container h3 {
+    margin-top: 0;
+}
+
+.resume-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.resume-container ul li {
+    margin-bottom: 10px;
+}
+
+.contact-icon {
+    display: inline-block;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.contact-icon a {
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+    width: 30px;
+    text-decoration: none;
+    border-radius: 30%; 
+    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white background */
+    color: white;
+}
+
+.contact-icon a:hover {
+    background-color: rgba(255, 255, 255, 0.5); /* Darken the background on hover */
+    color: #333; /* Change color on hover */
+}
+
+
+.portfolio-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px; /* Reduce padding */
+    margin-bottom: 20px;
+    max-width: 300px; /* Set maximum width */
+}
+
+.portfolio-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.description {
+    text-align: center;
+}
+
+.description h3 {
+    margin-top: 10px;
+}
+
+.description p {
+    margin-bottom: 10px;
+}
+
+.description a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.description a:hover {
+    text-decoration: underline;
+    color: plum;
+}
+
+.certificate-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.certificate-card {
+    width: calc(33.33% - 20px); /* 33.33% width for three cards */
+    text-align: center;
+    background-color: transparent;
+}
+
+.certificate-card:nth-child(n+4) {
+    margin-top: 20px; /* Add margin to separate the top and bottom rows */
+}
+
+.certificate-card img {
+    width: 100%; /* Ensure the image fills its container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px;
+}
+
+.certificate-card p {
+    margin-top: 10px;
+}
+
+
+/* Adjust styles as needed */
+
+footer {
+    background-color: transparent; /* Set background color to transparent */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
+
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+    /* Adjust styles for smaller screens */
+    header {
+        padding: 10px;
+    }
+}
