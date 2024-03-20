@@ -107,7 +107,6 @@ section {
     color: #333; /* Change color on hover */
 }
 
-
 .portfolio-card {
     display: flex;
     flex-direction: column;
@@ -174,9 +173,6 @@ section {
     margin-top: 10px;
 }
 
-
-/* Adjust styles as needed */
-
 footer {
     background-color: transparent; /* Set background color to transparent */
     color: white;
@@ -185,11 +181,38 @@ footer {
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2); /* Add shadow effect */
 }
 
-
 /* Media Queries */
 @media only screen and (max-width: 600px) {
-    /* Adjust styles for smaller screens */
+    body {
+        font-size: 14px; /* Decrease font size for smaller screens */
+    }
+
     header {
         padding: 10px;
+    }
+
+    nav ul li {
+        display: block; /* Change list items to display vertically */
+        margin: 10px 0; /* Adjust margin */
+    }
+
+    .portfolio-card {
+        max-width: 100%; /* Set maximum width to 100% for better responsiveness */
+    }
+
+    .certificate-card {
+        width: calc(50% - 20px); /* 50% width for two cards */
+    }
+
+    .certificate-card:nth-child(n+4) {
+        margin-top: 10px; /* Reduce margin between rows for certificates */
+    }
+
+    .resume-container {
+        margin-top: 10px; /* Adjust margin for resume section */
+    }
+
+    .contact-icons {
+        text-align: center; /* Center align contact icons */
     }
 }
