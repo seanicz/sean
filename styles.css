@@ -1,9 +1,9 @@
 /* General Styles */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: monospace;
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/bg.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/bg.jpg);
     background-size: cover;
     background-position: center;
     color: white; /* Change font color to white */
@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: transparent; /* Set background color to transparent */
     color: white;
     padding: 20px;
     text-align: center;
@@ -107,42 +107,21 @@ section {
     color: #333; /* Change color on hover */
 }
 
-/* Portfolio Section */
-#portfolio {
-    display: flex;
-    flex-wrap: wrap; /* Allow the cards to wrap */
-    justify-content: center; /* Center the cards */
-    gap: 20px; /* Add space between the cards */
-}
-
 .portfolio-card {
-    width: calc(33.33% - 20px); /* 33.33% width for three cards in a row */
-    text-align: center;
-    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border: 1px solid #ccc;
     border-radius: 5px;
-    padding: 10px;
+    padding: 10px; /* Reduce padding */
     margin-bottom: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    max-width: 300px; /* Set maximum width */
 }
 
 .portfolio-card img {
-    width: 100%; /* Ensure the image fills its container */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100%;
+    height: auto;
     border-radius: 5px;
-}
-
-/* Responsive Layout */
-@media only screen and (max-width: 900px) {
-    .portfolio-card {
-        width: calc(50% - 20px); /* 50% width for two cards in a row */
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .portfolio-card {
-        width: calc(100% - 20px); /* Full width on small screens */
-    }
 }
 
 .description {
