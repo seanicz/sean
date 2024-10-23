@@ -110,39 +110,38 @@ section {
 /* Portfolio Section */
 #portfolio {
     display: flex;
-    flex-wrap: wrap; /* Allow wrapping when space runs out */
+    flex-wrap: wrap; /* Allow the cards to wrap */
     justify-content: center; /* Center the cards */
-    gap: 20px; /* Add some space between the cards */
+    gap: 20px; /* Add space between the cards */
 }
 
 .portfolio-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: calc(33.33% - 20px); /* 33.33% width for three cards in a row */
+    text-align: center;
+    background-color: transparent;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
     margin-bottom: 20px;
-    width: calc(33.33% - 20px); /* Each card takes 33.33% of the width minus spacing */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .portfolio-card img {
-    max-width: 100%;
-    height: auto;
+    width: 100%; /* Ensure the image fills its container */
+    height: auto; /* Maintain aspect ratio */
     border-radius: 5px;
 }
 
-/* Media Query for Smaller Screens */
+/* Responsive Layout */
 @media only screen and (max-width: 900px) {
     .portfolio-card {
-        width: calc(50% - 20px); /* Two cards per row on medium screens */
+        width: calc(50% - 20px); /* 50% width for two cards in a row */
     }
 }
 
 @media only screen and (max-width: 600px) {
     .portfolio-card {
-        width: 100%; /* Full width on small screens */
+        width: calc(100% - 20px); /* Full width on small screens */
     }
 }
 
