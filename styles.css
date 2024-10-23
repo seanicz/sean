@@ -173,6 +173,59 @@ section {
     margin-top: 10px;
 }
 
+.friends-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create a 3x3 grid layout */
+    gap: 20px; /* Add space between the cards */
+    padding: 20px;
+    justify-items: center; /* Center items in the grid */
+}
+
+.friend-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    max-width: 300px; /* Set maximum width */
+}
+
+.friend-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.friend-card .description {
+    text-align: center;
+}
+
+.friend-card .description h3 {
+    margin-top: 10px;
+}
+
+.friend-card .description p {
+    margin-bottom: 10px;
+}
+
+/* Responsive design for smaller screens */
+@media only screen and (max-width: 600px) {
+    .friends-container {
+        grid-template-columns: repeat(2, 1fr); /* Adjust to 2 columns on small screens */
+    }
+
+    .friend-card {
+        max-width: 100%; /* Ensure the card takes full width on smaller screens */
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .friends-container {
+        grid-template-columns: 1fr; /* Adjust to 1 column on very small screens */
+    }
+}
+
 footer {
     background-color: transparent; /* Set background color to transparent */
     color: white;
