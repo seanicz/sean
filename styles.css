@@ -6,16 +6,16 @@ body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/bg.jpg);
     background-size: cover;
     background-position: center;
-    color: white; /* Change font color to white */
+    color: white;
     font-size: 15px;
 }
 
 header {
-    background-color: rgba(0, 0, 0, 0.5); /* Dark semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.5); 
     color: white;
     padding: 20px;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
 }
 
 nav ul {
@@ -29,13 +29,19 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white; /* Change link color to white */
+    color: white; 
     text-decoration: none;
-    transition: text-decoration 0.3s; /* Add transition effect for smooth hover */
+    transition: text-decoration 0.3s; 
 }
 
-nav ul li a:hover {
-    text-decoration: underline; /* Underline on hover */
+nav ul li a:hover, .description a:hover {
+    text-decoration: underline;
+    color: plum;
+    transition: color 0.3s ease-in-out; 
+}
+
+p {
+    line-height: 1.6; 
 }
 
 section {
@@ -66,11 +72,11 @@ section {
 }
 
 .resume-container {
-    background-color: transparent; /* Set background color to transparent */
+    background-color: transparent; 
     padding: 20px;
     border-radius: 5px;
     margin-top: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7); /* Add shadow effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7); 
 }
 
 .resume-container h3 {
@@ -99,13 +105,13 @@ section {
     width: 30px;
     text-decoration: none;
     border-radius: 30%; 
-    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white background */
+    background-color: rgba(255, 255, 255, 0.3); 
     color: white;
 }
 
 .contact-icon a:hover {
-    background-color: rgba(255, 255, 255, 0.5); /* Darken the background on hover */
-    color: #333; /* Change color on hover */
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #333; 
 }
 
 .portfolio-card {
@@ -114,9 +120,9 @@ section {
     align-items: center;
     border: 1px solid #ccc;
     border-radius: 5px;
-    padding: 10px; /* Reduce padding */
+    padding: 10px;
     margin-bottom: 20px;
-    max-width: 300px; /* Set maximum width */
+    max-width: 300px; 
 }
 
 .portfolio-card img {
@@ -155,18 +161,18 @@ section {
 }
 
 .certificate-card {
-    width: calc(33.33% - 20px); /* 33.33% width for three cards */
+    width: calc(33.33% - 20px); 
     text-align: center;
     background-color: transparent;
 }
 
 .certificate-card:nth-child(n+4) {
-    margin-top: 20px; /* Add margin to separate the top and bottom rows */
+    margin-top: 20px;
 }
 
 .certificate-card img {
-    width: 100%; /* Ensure the image fills its container */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%; 
+    height: auto;
     border-radius: 5px;
 }
 
@@ -176,11 +182,10 @@ section {
 
 .friends-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Create a 3x3 grid layout */
-    gap: 20px; /* Add space between the cards */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
     padding: 20px;
-    justify-items: center; /* Center items in the grid */
-}
+    justify-items: center; 
 
 .friend-card {
     display: flex;
@@ -189,34 +194,34 @@ section {
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
-    max-width: 300px; /* Set maximum width */
-    height: 400px; /* Set fixed height for uniform size */
+    max-width: 300px; 
+    height: 400px; 
 }
 
 .friend-card img {
-    width: 100%; /* Set the image to take full width of the card */
-    height: 200px; /* Set a fixed height for all images */
-    object-fit: cover; /* Ensure the image covers the area without distortion */
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
     border-radius: 5px;
 }
 
 .friend-card .description {
     text-align: center;
-    flex-grow: 1; /* Make the description grow to fill the available space */
+    flex-grow: 1; 
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center the text vertically */
+    justify-content: center; 
 }
 
 .friend-card .description h3, 
 .friend-card .description p {
-    margin: 5px 0; /* Small margins for a balanced layout */
+    margin: 5px 0; 
 }
 
 /* Responsive design for smaller screens */
 @media only screen and (max-width: 600px) {
     .friends-container {
-        grid-template-columns: repeat(2, 1fr); /* Adjust to 2 columns on small screens */
+        grid-template-columns: repeat(2, 1fr); 
     }
 
     .friend-card {
@@ -226,22 +231,22 @@ section {
 
 @media only screen and (max-width: 400px) {
     .friends-container {
-        grid-template-columns: 1fr; /* Adjust to 1 column on very small screens */
+        grid-template-columns: 1fr; 
     }
 }
 
 footer {
-    background-color: transparent; /* Set background color to transparent */
+    background-color: transparent; 
     color: white;
     text-align: center;
     padding: 10px 0;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2); 
 }
 
 /* Media Queries */
 @media only screen and (max-width: 600px) {
     body {
-        font-size: 14px; /* Decrease font size for smaller screens */
+        font-size: 14px; 
     }
 
     header {
@@ -249,27 +254,50 @@ footer {
     }
 
     nav ul li {
-        display: block; /* Change list items to display vertically */
-        margin: 10px 0; /* Adjust margin */
+        display: block;
+        margin: 10px 0; 
     }
 
     .portfolio-card {
-        max-width: 100%; /* Set maximum width to 100% for better responsiveness */
+        max-width: 100%; 
     }
 
     .certificate-card {
-        width: calc(50% - 20px); /* 50% width for two cards */
+        width: calc(50% - 20px);
     }
 
     .certificate-card:nth-child(n+4) {
-        margin-top: 10px; /* Reduce margin between rows for certificates */
+        margin-top: 10px; 
     }
 
     .resume-container {
-        margin-top: 10px; /* Adjust margin for resume section */
+        margin-top: 10px; 
     }
-
+    
     .contact-icons {
-        text-align: center; /* Center align contact icons */
+        text-align: center; 
     }
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #444; 
+    border-radius: 10px;
+}
+
+.portfolio-card, .friend-card, .certificate-card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.portfolio-card:hover, .friend-card:hover, .certificate-card:hover {
+    transform: translateY(0);
+    opacity: 1;
 }
