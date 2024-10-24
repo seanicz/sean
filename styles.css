@@ -44,8 +44,16 @@ p {
     line-height: 1.6; 
 }
 
+
 section {
     padding: 20px;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .skills-container {
@@ -299,14 +307,6 @@ footer {
     flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
-}
-
-.profile-pic img {
-    width: 10px !important;
-    height: 10px !important;
-    border-radius: 100%;
-    object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
 }
 
 .about-details {
