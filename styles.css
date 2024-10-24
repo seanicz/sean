@@ -302,11 +302,11 @@ footer {
 }
 
 .profile-pic img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover; /* Ensure the image doesn't stretch */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
 }
 
 .about-details {
