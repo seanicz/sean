@@ -122,24 +122,21 @@ section {
     color: #333; 
 }
 
-.portfolio-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; 
-    gap: 20px; 
-}
-
 .portfolio-card {
-    flex: 0 1 calc(50% - 20px); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
     max-width: 300px; 
-    margin-bottom: 20px; 
 }
 
-/* Responsive Design */
-@media only screen and (max-width: 600px) {
-    .portfolio-card {
-        flex: 0 1 calc(100% - 20px);
-    }
+.portfolio-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
 
 .description {
