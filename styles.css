@@ -301,3 +301,51 @@ footer {
     transform: translateY(0);
     opacity: 1;
 }
+
+/* About Section Styling */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.profile-pic img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover; /* Ensure the image doesn't stretch */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+}
+
+.about-details {
+    max-width: 600px;
+}
+
+.personal-info {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.personal-info li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.personal-info strong {
+    color: #e6e6e6; /* Change color for label emphasis */
+}
+
+@media only screen and (max-width: 600px) {
+    .about-container {
+        flex-direction: column; /* Stack profile pic and details vertically */
+        text-align: center;
+    }
+
+    .profile-pic img {
+        margin-bottom: 20px; /* Add spacing when stacked */
+    }
+}
