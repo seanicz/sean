@@ -291,17 +291,6 @@ footer {
     border-radius: 10px;
 }
 
-.portfolio-card, .friend-card, .certificate-card {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.portfolio-card:hover, .friend-card:hover, .certificate-card:hover {
-    transform: translateY(0);
-    opacity: 1;
-}
-
 /* About Section Styling */
 .about-container {
     display: flex;
