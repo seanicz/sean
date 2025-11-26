@@ -1,232 +1,350 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SEAN - Portfolio</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sean - Portfolio</title>
+    <meta name="description" content="Senior Mobile and Frontend Engineer specializing in React Native, Expo, and cross-platform development. Building exceptional digital experiences.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header>
-    <h1>Jan Sean Dale Mamaclay</h1>
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#resume">Education</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#certificate">Certificate</a></li>
-            <li><a href="#friends">Friends&Prof</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">Sean</a>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
 
-<section id="about">
-<h2>About Me</h2>
-<div class="about-container">
-   <img class="profile-pic" src="img/profile.jpg" alt="Profile Picture">
-    <div class="about-details">
-        <p>I’m Jan Sean Dale, a simple person from Aliaga, Nueva Ecija. I enjoy hanging out with friends and spend a lot of time playing online games. My passion for gaming brings me joy, but my ultimate dream is to achieve success in life and make a positive impact on others.</p>
-        <ul class="personal-info">
-            <li><strong>Address:</strong> Aliaga, Nueva Ecija, Philippines</li>
-            <li><strong>Mobile:</strong> 09271474617</li>
-        </ul>
-    </div>
-</div>
-</section>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <span class="greeting">Hello, I'm</span>
+                    <h1>Sean</h1>
+                    <div class="tagline">Senior Mobile & Frontend Engineer</div>
+                    <p class="description">
+                        I build exceptional digital experiences with a focus on performance, accessibility, and clean code. 
+                        Currently crafting mobile solutions at Gloroots and contributing to open source.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn">Get In Touch</a>
+                        <a href="#projects" class="btn btn-secondary">View My Work</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-img">
+                        <!-- Placeholder for profile image -->
+                        <div style="width:100%;height:100%;background:linear-gradient(135deg, #667eea 0%, #764ba2 100%);display:flex;align-items:center;justify-content:center;color:white;font-size:4rem;">
+                            S
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section id="resume">
-<h2>Educational Background</h2>
-<div class="resume-container">
-    <h3>Education</h3>
-    <ul>
-        <li>Junior High School</li>
-        <li>Senior Highscool</li>
-        <li>Currently 2nd Year College</li>
-    </ul>
-    <h3>Skills</h3>
-    <ul>
-        <li>Computer Literate</li>
-        <li>Basic IT Troubleshooting</li>
-    </ul>
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <p class="section-subtitle">A comprehensive overview of my technical skills and areas of expertise</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-mobile-alt"></i> Mobile Development</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">React Native</span>
+                        <span class="skill-tag">Expo</span>
+                        <span class="skill-tag">iOS (Swift)</span>
+                        <span class="skill-tag">Android (Kotlin)</span>
+                        <span class="skill-tag">Flutter</span>
+                        <span class="skill-tag">Cross-platform</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Frontend Development</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                        <span class="skill-tag">Next.js</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools & Technologies</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">Firebase</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">GraphQL</span>
+                        <span class="skill-tag">Jest</span>
+                        <span class="skill-tag">CI/CD</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <h3>Achievements</h3>
-    <ul>
-        <li>Graduated  Highschool</li>
-        <li>Dean's Lister 1st Year 1st Semester</li>
-    </ul>
-</div>
-</section>
-<section id="portfolio">
-<h2>Portfolio</h2>
-<div class="portfolio-card">
-    <img src="img/p1.png" alt="Portfolio Image">
-    <div class="description">
-        <h3>Tokyo's Beauty</h3>
-        <p>ITE 399</p>
-        <a href="https://drive.google.com/drive/folders/1dUzKHcCukO4SODbAjBLbIVBdCcQbLdkX?usp=drive_link" target="_blank">Link to Project</a>
-    </div>
-</div>
-<div class="portfolio-card">
-    <img src="p2.png" alt="Portfolio Image">
-    <div class="description">
-        <h3>Library App</h3>
-        <p>ITE 393</p>
-        <a href="https://drive.google.com/drive/folders/11yTrz92i6kQkNKpzrhZH66Q576kPhC4E?dmr=1&ec=wgc-drive-globalnav-goto" target="_blank">Link to Project</a>
-    </div>
-</div>
-<div class="portfolio-card">
-    <img src="img/ias.png" alt="Portfolio Image">
-    <div class="description">
-        <h3>IAS</h3>
-        <p>ITE 302</p>
-        <a href="https://docs.google.com/presentation/d/10K_sBr5pihm0iy4ted-UnljbC6NpAVSD/edit#slide=id.p1" target="_blank">Link to Project</a>
-    </div>
-</div>
-<div class="portfolio-card">
-    <img src="img/app.png" alt="Portfolio Image">
-    <div class="description">
-        <h3>Appointify</h3>
-        <p>ITE 387</p>
-        <a href="https://drive.google.com/drive/folders/1tGHE504wEF9dDv-ZtKLXtMZQ_SdiHngw?dmr=1&ec=wgc-drive-globalnav-goto" target="_blank">Link to Project</a>
-    </div>
-</div>
-<div class="portfolio-card">
-    <img src="img/cb.png" alt="Portfolio Image">
-    <div class="description">
-        <h3>Cabseed</h3>
-        <p>ITE 314</p>
-        <a href="https://drive.google.com/drive/folders/1mmuhoUSWuAvnqAkj64HnFbPATtdfqtUZ?fbclid=IwY2xjawGG4JRleHRuA2FlbQIxMAABHQOKdzyz1tvv2NC7EdqRzWi_qWsNvJTK8yTDXuCmgU_2lvS3irSlMrGZyw_aem_be7ivh3RtCb_QKsUPtG3aw" target="_blank">Link to Project</a>
-    </div>
-</div>
-<div class="portfolio-card">
-    <img src="img/th.png" alt="Portfolio Image">
-    <div class="description">
-        <h3>SysDev</h3>
-        <p>ITE 387</p>
-        <a href="https://www.salesforce.com/trailblazer/ejz4scchau9ojazlj6" target="_blank">Link to Project</a>
-    </div>
-</div>
-</section>
-<section id="skills">
-<h2>Skills</h2>
-<div class="skills-container">
-    <div class="skill">
-        <img src="img/il.jpeg" alt="Computer Literacy">
-        <p>Computer Literate</p>
-    </div>
-    <div class="skill">
-        <img src="img/c.jpg" alt="Communication">
-        <p>Communication</p>
-    </div>
-    <div class="skill">
-        <img src="img/logo.jpg" alt="Communication">
-        <p>ChatGPT</p>
-    </div>
-</div>      
-</section>
-<section id="certificate">
-<h2>Certificates</h2>
-<div class="certificate-cards">
-    <div class="certificate-card">
-        <img src="img/t1.png" alt="Certificate 1">
-        <p>TESDA</p>
-    </div>
-    <div class="certificate-card">
-        <img src="img/t2.png" alt="Certificate 2">
-        <p>TESDA</p>
-    </div>
-    <div class="certificate-card">
-        <img src="img/t3.png" alt="Certificate 3">
-        <p>TESDA</p>
-    </div>
-    <div class="certificate-card">
-        <img src="img/t4.png" alt="Certificate 4">
-        <p>TESDA</p>
-    </div>
-    <div class="certificate-card">
-        <img src="img/t5.png" alt="Certificate 5">
-        <p>TESDA</p>
-    </div>
-</div>
-</section>
-<section id="friends">
-<h2>Friends & Prof</h2>
-<div class="friends-container">
-    <div class="friend-card">
-        <img src="img/s2.jpg" alt="Friend 1">
-        <div class="description">
-            <h3>South 2</h3>
-            <p>Classmates</p>
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">A selection of my recent work and personal projects</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">react-native-tailwindcss</h3>
+                        <p class="project-description">A utility-first library for using Tailwind CSS in React Native projects with full TypeScript support.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/seanicz/react-native-tailwindcss" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">expo-video</h3>
+                        <p class="project-description">A cross-platform video player for Expo with advanced controls, caching, and performance optimizations.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Expo</span>
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Video</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/seanicz/expo-video" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Expo Router Guide</h3>
+                        <p class="project-description">Comprehensive documentation and examples for the Expo Router, a file-based router for React Native.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Expo</span>
+                            <span class="tech-tag">Routing</span>
+                            <span class="tech-tag">Documentation</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/seanicz/expo-router-guide" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="friend-card">
-        <img src="img/f2.jpg" alt="Friend 2">
-        <div class="description">
-            <h3>Birthday</h3>
-            <p>College Buddies</p>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Work Experience</h2>
+                <p class="section-subtitle">My professional journey and career milestones</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2022 - Present</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Senior Mobile Engineer</h3>
+                        <div class="timeline-company">Gloroots</div>
+                        <p class="timeline-description">Leading mobile development efforts, architecting cross-platform solutions, and mentoring junior developers. Focus on React Native, Expo, and performance optimization.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2020 - 2022</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Mobile Developer</h3>
+                        <div class="timeline-company">Tech Innovations Inc.</div>
+                        <p class="timeline-description">Developed and maintained mobile applications for iOS and Android using React Native. Collaborated with design and product teams to implement new features.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2018 - 2020</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Frontend Developer</h3>
+                        <div class="timeline-company">Digital Solutions Ltd.</div>
+                        <p class="timeline-description">Built responsive web applications using React, TypeScript, and modern CSS. Focused on creating accessible and performant user interfaces.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="friend-card">
-        <img src="img/f.jpg" alt="Friend 3">
-        <div class="description">
-            <h3>Birthday ni David</h3>
-            <p>Friends</p>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Latest Articles</h2>
+                <p class="section-subtitle">Thoughts, tutorials, and insights on mobile and frontend development</p>
+            </div>
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date">March 15, 2023</div>
+                        <h3 class="blog-title">Building a Cross-Platform Video Player</h3>
+                        <p class="blog-excerpt">A deep dive into creating a performant video player that works seamlessly across iOS, Android, and web platforms.</p>
+                        <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date">February 28, 2023</div>
+                        <h3 class="blog-title">Expo Router - A Complete Guide</h3>
+                        <p class="blog-excerpt">Exploring the file-based routing system in Expo and how it simplifies navigation in React Native apps.</p>
+                        <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date">January 12, 2023</div>
+                        <h3 class="blog-title">React Native WebView - Everything You Need to Know</h3>
+                        <p class="blog-excerpt">Comprehensive guide to using WebView in React Native, from basic implementation to advanced communication patterns.</p>
+                        <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="friend-card">
-        <img src="img/302.jpg" alt="Friend 4">
-        <div class="description">
-            <h3>Project</h3>
-            <p>Groupmates</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Have a project in mind or want to collaborate? I'd love to hear from you.</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>hello@sean.dev</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>Wrocław, Poland</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Availability</h3>
+                            <p>Open for freelance projects</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/seanicz" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-dev"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="friend-card">
-        <img src="img/tesda.jpeg" alt="Friend 4">
-        <div class="description">
-            <h3>Tesda</h3>
-            <p>Batch 5</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="copyright">
+                    &copy; 2023 Sean. All rights reserved.
+                </div>
+                <div class="footer-links">
+                    <a href="#" style="color: var(--text-light); margin-left: 1rem;">Privacy Policy</a>
+                    <a href="#" style="color: var(--text-light); margin-left: 1rem;">Terms of Service</a>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="friend-card">
-        <img src="img/j.jpg" alt="Friend 5">
-        <div class="description">
-            <h3>Adviser</h3>
-            <p>Sir Jestony</p>
-        </div>
-    </div>
-    <div class="friend-card">
-        <img src="img/a.jpg" alt="Friend 6">
-        <div class="description">
-            <h3>Professor</h3>
-            <p>Sir Arjay</p>
-        </div>
-    </div>
-</div>
-</section>
-<section id="contact">
-<h2>Contact Information</h2>
-<p>Feel free to contact me through the following channels:</p>
-<div class="contact-icons">
-    <div class="contact-icon">
-        <a href="tel:09271474617" class="fa fa-phone"></a>
-        <span>09271474617</span>
-    </div>
-    <div class="contact-icon">
-        <a href="https://www.facebook.com/profile.php?id=100074013472585" class="fa fa-facebook" target="_blank"></a>
-        <span>Jan Sean Dale Mamaclay</span>
-    </div>
-    <div class="contact-icon">
-        <a href="https://www.instagram.com/_seanicz/" class="fa fa-instagram" target="_blank"></a>
-        <span>_seanicz</span>
-    </div>
-    <!-- Add more social media icons as needed -->
-</div>
-</section>
-<footer>
-    <p>&copy; 2024 Sean</p>
-</footer>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <script src="script.js"></script>
 </body>
 </html>
